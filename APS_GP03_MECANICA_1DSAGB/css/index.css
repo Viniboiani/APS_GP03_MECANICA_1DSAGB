@@ -1,0 +1,33 @@
+/* Fundo geral da tela */
+.tela {
+    height: 100vh;
+    background-color: #fbb03b; /* Laranja */
+  }
+  
+  /* Círculo amarelo */
+  .circulo {
+    background-color: #fce36b; /* Amarelo claro */
+    border-radius: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ícone central */
+  .icone {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Responsividade para telas maiores */
+  @media (min-width: 768px) {
+    .icone {
+      width: 150px;
+    }
+  
+    .circulo {
+      padding: 60px;
+    }
+  }
+  

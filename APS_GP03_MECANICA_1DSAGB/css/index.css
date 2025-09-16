@@ -30,4 +30,82 @@
       padding: 60px;
     }
   }
+ 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .form-wrapper {
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .form-box {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .top-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid #ffd43b; 
+    border-bottom: 150px solid transparent;
+  }
+  
+  .top-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 150px solid #cfcfcf; 
+    border-bottom: 150px solid transparent;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+  
+  .form-title strong {
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 10px;
+  }
+  
+  
+  .criar-btn {
+    background-color: #000;
+    color: #ffd43b;
+    border-radius: 0;
+    padding: 12px;
+  }
+  
+  .criar-btn:hover {
+    background-color: #333;
+  }
   

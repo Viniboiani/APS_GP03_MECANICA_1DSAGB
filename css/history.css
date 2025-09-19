@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#topbar-background{
+    background-color: #ffde59;
+    width: 100%;
+    height: 20vh;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

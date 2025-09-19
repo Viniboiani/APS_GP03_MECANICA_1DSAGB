@@ -484,3 +484,28 @@ body {
       background-color: initial;
   }
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.yellow-bg {
+  background-color: #FFD700;
+}
+
+.gray-bg {
+  background-color: #a6a3a3;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: black;
+  z-index: 2;
+  margin-left: -20px;
+}
+
+.btn.max-w-300 {
+  max-width: 400px;
+  max-height: 100px;
+}

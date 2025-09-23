@@ -182,6 +182,10 @@ body, html {
     color: #000000 !important;
 }
 
+#cadastre{
+  font-size: 15px;
+}
+
 
 @media (max-width: 576px) {
     .header-yellow-bg {
@@ -222,7 +226,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   width: 100%;
-  margin-top: 100px; /* Adjust to accommodate fixed header */
+  margin-top: 100px; 
 }
 
 .icon-circle {
@@ -508,4 +512,89 @@ body {
 .btn.max-w-300 {
   max-width: 400px;
   max-height: 100px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-light-gray {
+  background-color: #F8F9FA;
+}
+
+.yellow-top-bg {
+  background-color: #FFC107;
+  height: 25vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.password-recovery-card {
+  position: relative;
+  z-index: 2;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.custom-input {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  background-color: #F1F1F1;
+  border: 1px solid #ced4da;
+}
+
+.custom-send-btn {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.custom-send-btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.input-group .form-control.custom-input {
+  border-right: none;
+}
+
+.custom-icon-span {
+  border-radius: 10px;
+  border-left: none;
+}
+
+.custom-finish-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.custom-finish-btn:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+@media (min-width: 768px) {
+  .password-recovery-card {
+      padding: 3rem;
+  }
 }

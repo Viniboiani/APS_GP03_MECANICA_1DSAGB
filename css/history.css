@@ -10,3 +10,24 @@
 .pesquisa{
     background-color: white;
 }
+#Voltar{
+    margin: auto;
+    background-color: white;
+    border-radius: 100px;
+    text-align: center;
+
+}
+.home{
+    color: orange;
+}
+.back{
+    color: orange;
+    background-color: white;
+}
+.button{
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 100px;
+    width: 40%;
+}

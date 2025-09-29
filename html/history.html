@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-        <title>Histórico de pedidos</title>
-        <!-- Required meta tags -->
+        <title>Histórico de Pedidos</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -17,34 +15,107 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="../css/history.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
     <body>
-        <nav>
-            <div class="conteiner-fluid" id="topbar-background">
-                <div class="row justify-content-center topbar">
-                    <div class="col-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z"/>
-                        </svg>
-                        <a class="navbar-brand btn back" href="home.html" role="button">Voltar</a>
+        <header>
+            <div class="container-fluid topbar-background">
+                <div class="row align-items-center topbar-content">
+                    
+                    <div class="col-3 d-flex justify-content-start">
+                        <div class="icon-circle back-button">
+                            <a href="home.html" class="bi bi-arrow-left-short back-icon"></a>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar produtos" aria-label="Search">
-                        </form>
+                    
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="search-bar">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="search" placeholder="Procurar produto" class="search-input">
+                            <i class="bi bi-sliders filter-icon"></i>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="orange" class="bi bi-house-fill" viewBox="0 0 16 16">
-                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-                              </svg>
-                            <a class="navbar-brand btn home" href="home.html" role="button">Home</a>
+                    
+                    <div class="col-3 d-flex justify-content-end">
+                        <div class="icon-circle home-button">
+                            <a href="home.html" class="bi bi-house-fill home-icon"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </header>
+
+        <main class="container-fluid p-0">
+            <div class="text-center my-3 title-section">
+                <h2 class="title-text">Meus Pedidos <i class="bi bi-box-seam"></i></h2>
+            </div>
+
+            <div class="container py-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    
+                    <div class="col">
+                        <div class="order-item shadow-sm">
+                            <div class="order-header-acaminho">
+                                <span class="date">27/08/25</span>
+                                <span class="status-acaminho">A caminho</span>
+                            </div>
+                            <div class="order-details">
+                                <div class="product-info">
+                                    <div class="placeholder-img"></div>
+                                    <div>
+                                        <p class="product-name">Farol de carro</p>
+                                        <p class="price">R$ 800,90</p>
+                                        <p class="shipping-info">Previsão: 30/08/25</p>
+                                        <p class="shipping-info">O vendedor despachou seu pacote</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="details-link">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="order-item shadow-sm">
+                            <div class="order-header-entregue">
+                                <span class="date">26/08/25</span>
+                                <span class="status-entregue">Entregue</span>
+                            </div>
+                            <div class="order-details">
+                                <div class="product-info">
+                                    <div class="placeholder-img"></div>
+                                    <div>
+                                        <p class="product-name">leo de motor PDS | Premium</p>
+                                        <p class="price">R$ 886,93</p>
+                                        <p class="shipping-info">Entregue: 28/08/25</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="details-link">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="order-item shadow-sm">
+                            <div class="order-header-entregue">
+                                <span class="date">15/08/25</span>
+                                <span class="status-entregue">Entregue</span>
+                            </div>
+                            <div class="order-details">
+                                <div class="product-info">
+                                    <div class="placeholder-img"></div>
+                                    <div>
+                                        <p class="product-name">Bateria de Carro Moura</p>
+                                        <p class="price">R$ 499,00</p>
+                                        <p class="shipping-info">Entregue: 20/08/25</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="details-link">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

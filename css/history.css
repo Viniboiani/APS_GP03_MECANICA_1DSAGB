@@ -1,33 +1,203 @@
-#topbar-background{
-    background-color: #ffd700;
-    height: 15vh;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+/* Cores base */
+:root {
+    --primary-yellow: #ffd700; /* Amarelo da barra superior */
+    --primary-orange: #ff9900; /* Laranja dos ícones */
+    --status-green: #28a745; /* Verde para "Entregue" */
+    --status-blue: #007bff; /* Azul para "A caminho" */
+    --text-color: #333;
 }
-.topbar{
-    height: 15vh;
-}
-.pesquisa{
-    background-color: white;
-}
-#Voltar{
-    margin: auto;
-    background-color: white;
-    border-radius: 100px;
-    text-align: center;
 
+/* 1. BARRA SUPERIOR (HEADER) */
+a {
+    text-decoration: none; 
+    color: inherit;
 }
-.home{
-    color: orange;
+
+.topbar-background {
+    background-color: var(--primary-yellow);
+    height: 15vh;
+    /* Cantos inferiores arredondados */
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px;
+    padding: 0 1rem; /* Espaçamento interno */
 }
-.back{
-    color: orange;
+
+.topbar-content {
+    height: 15vh;
+    align-items: center;
+}
+
+/* Círculos de Ícone (Voltar e Home) */
+.icon-circle {
     background-color: white;
+    border-radius: 50%;
+    width: 60px; /* Tamanho do círculo */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.button{
-    margin: 0 auto;
-    text-align: center;
+.back-text{
+    color: #ff9900;
+}
+
+.back-icon, .home-icon {
+    font-size: 2.5rem; /* Tamanho dos ícones */
+    color: var(--primary-orange);
+}
+
+/* Barra de Pesquisa */
+.search-bar {
     background-color: white;
-    border-radius: 100px;
-    width: 40%;
+    border-radius: 30px; /* Totalmente arredondado */
+    width: 95%; /* Ocupa quase toda a largura central */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.search-icon {
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+    margin-right: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.filter-icon {
+    font-size: 1.5rem;
+    color: #999; /* Cinza suave */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 2. SEÇÃO DO TÍTULO "MEUS PEDIDOS" */
+
+.title-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -30px; /* Sobe um pouco para sobrepor a barra amarela */
+}
+
+.title-text {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 3. QUADRADOS/ITENS DE PEDIDO (Order Items) */
+
+.order-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+/* Cabeçalho do Item */
+.order-header-acaminho, .order-header-entregue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.order-header-acaminho {
+    background-color: var(--status-blue); /* Azul */
+}
+
+.order-header-entregue {
+    background-color: var(--status-green); /* Verde */
+}
+
+/* Status dentro do cabeçalho */
+.status-acaminho::before {
+    content: "• ";
+    font-size: 1.5rem;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.status-entregue::before {
+    content: "• ";
+    font-size: 1.5rem;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+
+/* Detalhes do produto */
+.order-details {
+    padding: 15px;
+}
+
+.product-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.placeholder-img {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0; /* Cinza para o placeholder da imagem */
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: var(--text-color);
+}
+
+.price {
+    font-weight: bold;
+    color: #ff4500; /* Cor de preço */
+    margin-bottom: 2px;
+}
+
+.shipping-info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.details-link {
+    display: block;
+    text-align: right;
+    color: var(--primary-orange);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* 4. SEUS ESTILOS INICIAIS (Ajustados/Removidos, caso necessário) */
+
+/* Seus estilos iniciais foram incorporados/ajustados acima */
+/* Ex: #topbar-background virou .topbar-background */
+/* Ex: .topbar virou .topbar-content */
+/* Ex: .pesquisa foi substituído por .search-bar */
+/* Ex: .home e .back foram substituídos por .icon-circle e .home-icon, etc. */

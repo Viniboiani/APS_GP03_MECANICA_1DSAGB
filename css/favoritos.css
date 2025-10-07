@@ -1,16 +1,20 @@
 :root{
     --primary-gray: #545454;
     --primary-orange: #ff9900;
+    --primary-yellow: #ffd700;
 }
 
 #MainTitle{
-    color: var(--primary-orange);
+    color: var(--primary-yellow);
     font-size: 70px;
 }
 
 .topbar-background{
     height: 15vh;
     background-color: var(--primary-gray);
+    padding: 0 1rem;
+    border-bottom-right-radius: 15px; 
+    border-bottom-left-radius: 15px;
 }
 
 .topbar-content{
@@ -31,5 +35,10 @@
 
 .home-icon{
     font-size: 2.5rem;
-    color: var(--primary-orange);
+    color: var(--primary-yellow);
+}
+
+.Star-icon{
+    color: var(--primary-yellow);
+    font-size: 3.5rem;
 }

@@ -47,6 +47,9 @@ a {
     font-size: 2.5rem; /* Tamanho dos ícones */
     color: var(--primary-orange);
 }
+.home-icon{
+    margin-top: -5px;
+}
 
 /* Barra de Pesquisa */
 .search-bar {
@@ -160,10 +163,10 @@ a {
 }
 
 .placeholder-img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     background-color: #f0f0f0; /* Cinza para o placeholder da imagem */
-    border-radius: 5px;
+    border-radius: 15px;
     flex-shrink: 0;
 }
 

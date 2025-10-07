@@ -4,12 +4,12 @@
     background-color: #fbb03b; 
   }
   
-  /* Círculo amarelo */
   .circulo {
-    background-color: #FFD700; 
+    background-color: #FFde59; 
     border-radius: 50%;
-    padding: 40px;
     display: flex;
+    width: 250px;
+    height: 250px;
     justify-content: center;
     align-items: center;
   }
@@ -18,6 +18,10 @@
   .icone {
     width: 100px;
     height: auto;
+  }
+
+  .mecanica{
+    font-size: 40px;
   }
   
   /* Responsividade para telas maiores */

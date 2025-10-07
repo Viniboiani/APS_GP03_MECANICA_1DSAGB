@@ -553,8 +553,8 @@ body {
 }
 
 .custom-send-btn {
-  background-color: #007BFF;
-  border-color: #007BFF;
+  background-color: #7c8186;
+  border-color: #7c8186;
   color: #FFFFFF;
   font-weight: bold;
   border-radius: 10px;
@@ -562,8 +562,8 @@ body {
 }
 
 .custom-send-btn:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #575a5d;
+  border-color: #575a5d;
 }
 
 .input-group .form-control.custom-input {
@@ -576,8 +576,8 @@ body {
 }
 
 .custom-finish-btn {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color:#343a40;
+  border-color: #343a40;
   color: #FFFFFF;
   font-weight: bold;
   border-radius: 10px;
@@ -585,8 +585,8 @@ body {
 }
 
 .custom-finish-btn:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color: #171717;
+  border-color: #171717;
 }
 
 @media (min-width: 768px) {

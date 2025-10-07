@@ -1,12 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --primary-gray: #545454;
+    --primary-orange: #ff9900;
 }
 
-.cinza{
-    background-color: #545454;
+#MainTitle{
+    color: var(--primary-orange);
+    font-size: 70px;
 }
 
-.cima{
+.topbar-background{
     height: 15vh;
+    background-color: var(--primary-gray);
+}
+
+.topbar-content{
+    height: 15vh;
+    align-items: center;
+}
+
+.icon-circle{
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home-icon{
+    font-size: 2.5rem;
+    color: var(--primary-orange);
 }

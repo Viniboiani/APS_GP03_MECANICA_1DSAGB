@@ -1,6 +1,7 @@
 
 .tela {
     height: 100vh;
+    width: 100vw;
     background-color: #fbb03b; 
   }
   
@@ -13,18 +14,17 @@
     justify-content: center;
     align-items: center;
   }
-  
+
+  #mecanica{
+    font-size: 70px;
+    font-weight: 700;
+  }
  
   .icone {
     width: 100px;
     height: auto;
   }
 
-  .mecanica{
-    font-size: 40px;
-  }
-  
-  /* Responsividade para telas maiores */
   @media (min-width: 768px) {
     .icone {
       width: 150px;

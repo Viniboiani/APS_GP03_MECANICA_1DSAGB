@@ -137,19 +137,19 @@ a {
 
 /* Status dentro do cabeçalho */
 .status-acaminho::before {
-    content: "• ";
     font-size: 1.5rem;
     line-height: 0;
     vertical-align: middle;
 }
 
 .status-entregue::before {
-    content: "• ";
     font-size: 1.5rem;
     line-height: 0;
     vertical-align: middle;
 }
-
+.entregue{
+    opacity: 0.8;
+}
 
 /* Detalhes do produto */
 .order-details {
@@ -195,6 +195,12 @@ a {
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
+}
+#oleo{
+    margin-top: -5px;
+}
+#bateria{
+    margin-top: 15px;
 }
 
 /* 4. SEUS ESTILOS INICIAIS (Ajustados/Removidos, caso necessário) */

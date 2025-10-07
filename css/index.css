@@ -1,26 +1,30 @@
 
 .tela {
     height: 100vh;
+    width: 100vw;
     background-color: #fbb03b; 
   }
   
-  /* Círculo amarelo */
   .circulo {
-    background-color: #FFD700; 
+    background-color: #FFde59; 
     border-radius: 50%;
-    padding: 40px;
     display: flex;
+    width: 250px;
+    height: 250px;
     justify-content: center;
     align-items: center;
   }
-  
+
+  #mecanica{
+    font-size: 70px;
+    font-weight: 700;
+  }
  
   .icone {
     width: 100px;
     height: auto;
   }
-  
-  /* Responsividade para telas maiores */
+
   @media (min-width: 768px) {
     .icone {
       width: 150px;

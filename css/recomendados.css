@@ -1,0 +1,42 @@
+/* Cores personalizadas baseadas na imagem */
+:root {
+    --bs-custom-yellow: #fddb69; /* Cor principal superior */
+    --bs-custom-gray: #d4d4d4; /* Fundo principal */
+    --bs-custom-orange: #ff9147; /* Cor de destaque para preço/botão */
+    --bs-custom-text-dark: #6c6c6c; /* Cor de texto padrão */
+}
+
+/* Estilo para a seção de cabeçalho e fundo */
+body {
+    background-color: var(--bs-custom-gray);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da barra de busca/header */
+.header-bg {
+    background-color: var(--bs-custom-yellow);
+    padding: 20px 0;
+}
+
+/* Estilo para os cards */
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Cor do preço com desconto e do botão de detalhes */
+.price-highlight {
+    color: var(--bs-custom-orange);
+    font-weight: bold;
+}
+
+/* Estilo para o separador de seção */
+.section-title {
+    color: var(--bs-custom-text-dark);
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}

@@ -25,14 +25,14 @@ body, html{
     padding: 0 1rem;
 }
 
-.midbar-background{
-    height: 85vh;
-    background-color: var(--primary-gray);
-}
-
 .topbar-content{
     height: 15vh;
     align-items: center;
+}
+
+.midbar-background{
+    height: 85vh;
+    background-color: var(--primary-gray);
 }
 
 .icon-circle{
@@ -61,8 +61,9 @@ body, html{
     height: 0;
     border-top: 500px solid var(--primary-lightgray);
     border-right: 300px solid transparent;
-    transform: rotate(90deg);
-    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    transform: rotate(90deg) translateX(-33%);
 }
 
 .triangulo2{
@@ -70,6 +71,7 @@ body, html{
     height: 0;
     border-top: 500px solid var(--primary-lightgray);
     border-right: 300px solid transparent;
-    transform: rotate(-90deg);
-    margin-top: -175px;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-90deg) translateX(91%);
 }
